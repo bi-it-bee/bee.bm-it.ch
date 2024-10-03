@@ -1,0 +1,49 @@
+body {
+    margin: 10;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(1020deg, #0a0211, #350b6d, #8a0bf1);
+    background-size: 200% 200%;
+    animation: gradientBackground 10s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+p {
+    font-size: 4rem;
+    font-family: 'Edu AU VIC WA NT Guides', sans-serif;
+    text-align: center;
+    color: transparent;
+    background: url('elec.gif');
+    background-size: cover; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rotateText 2s linear infinite;
+}
+
+a.no-decoration {
+    text-decoration: none;  
+    color: inherit;         
+}
+
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

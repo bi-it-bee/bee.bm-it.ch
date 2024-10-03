@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio and Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(mountains.png);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #444;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .section1 {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .section2 {
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(1, 1, 1, 3);
+        }
+
+        .section h2 {
+            margin-top: 2;
+        }
+        .language-switcher {
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .language-switcher button {
+            text-align: center;
+            margin: 0 5px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .language-switcher img {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+
+        a.no-decoration {
+            text-decoration: none;
+            color: aqua;
+            text-shadow: 2px 2px 4px rgba(1, 1, 1, 3);     
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 id="site-title">My Portfolio and Resume</h1>
+</header>
+
+<nav>
+    <a class="no-decoration" href="#about" id="nav-about">About Me</a>
+    <a class="no-decoration" href="#portfolio" id="nav-portfolio">Portfolio</a>
+    <a class="no-decoration" href="#resume" id="nav-resume">Resume</a>
+    <a class="no-decoration" href="#contact" id="nav-contact">Contact</a>
+</nav>
+
+<div class="overlay"></div>
+
+<div class="language-switcher">
+    <button onclick="setLanguage('en')">
+        <img src="gb.png" alt="EN">EN
+    </button>
+    <button onclick="setLanguage('de')">
+        <img src="de.png" alt="DE">DE
+    </button>
+    <button onclick="setLanguage('ru')">
+        <img src="ru.png" alt="RU">RU
+    </button>
+</div>
+
+<div class="container">
+    <section id="about" class="section1">
+        <h2 id="about-title">About Me</h2>
+        <p id="about-content">Hello! I am Emmanuil Bernadin, a passionate web developer with experience in creating dynamic and responsive websites. I love coding and learning new technologies.</p>
+    </section>
+
+    <section id="portfolio" class="section1">
+        <h2 id="portfolio-title">Portfolio</h2>
+        <p id="portfolio-content">Here are some of my recent projects (On the site you click any language, as you will see text describing projects):</p>
+        <ul>
+            <li><a class="no-decoration" id="project1" href="H:\" target="_blank">Project 1</a></li>
+            <li><a class="no-decoration" id="project2" href="beeGV" target="_blank">Project 2</a></li>
+            <li><a class="no-decoration" id="project3" href="Spiel.bat" target="_blank">Project 3</a></li>
+        </ul>
+    </section>
+
+    <section id="resume" class="section2">
+        <h2 id="resume-title">Resume</h2>
+        <p id="resume-content">You can download my resume <a class="no-decoration" href="Lebenslauf Emmanuil Bernadin2.pdf" target="_blank" id="resume-link">here</a>.</p>
+        <h3 id="work-experience-title">Work Experience</h3>
+        <ul id="work-experience-list">
+            <li><strong>ESPAS</strong> - Training IT (12.08.<b><i>24</i></b> - <b><i>Present</i></b>)</li>
+            <li><strong>ESPAS</strong> - Examination student (29.04.<b><i>24</i></b> - 09.08.<b><i>24</i></b>)</li>
+            <li><strong>OIZ</strong> - intern (18.09.<b><i>23</i></b> - 25.04.<b><i>24</i></b>)</li>
+        </ul>
+        <h3 id="education-title">Education</h3>
+        <ul id="education-list">
+            <li><strong>BBW Winthertur</strong> - Training IT (19.08.<b><i>24</i></b> - <b><i>Present</i></b>)</li>
+            <li><strong>ESPAS</strong> - Examination IT (29.04.<b><i>24</i></b> - 09.08.<b><i>24</i></b>)</li>
+            <li><strong>OIZ</strong> - intern ICT-Fachman and informatics (18.09.<b><i>23</i></b> - 25.04.<b><i>24</i></b>)</li>
+            <li><strong>Fachschool "Viventa"</strong> - german school (22.08.<b><i>22</i></b> - 14.07.<b><i>23</i></b>)</li>
+            <li><strong>EB Zuerich</strong> - german school (18.04.<b><i>22</i></b> - 01.07.<b><i>22</i></b>)</li>
+            <li><strong>School of Extern</strong> - secondary school (01.09.<b><i>16</i></b> - 23.06.<b><i>23</i></b>)</li>
+            <li><strong>"Сузір'я"</strong> - primar school (01.09.<b><i>12</i></b> - 31.05.<b><i>16</i></b>)</li>            
+        </ul>
+    </section>
+
+    <section id="contact" class="section2">
+        <h2 id="contact-title">Contact</h2>
+        <p id="contact-content">If you would like to get in touch, please email me at <a class="no-decoration" href="mailto:emmanuilka.media@gmail.com" id="contact-email">emmanuilka.media@gmail.com</a>.</p>
+        <p id="phone-contact">Phone: +1-234-567-890</p>
+    </section>
+</div>
+
+<footer>
+    <p id="footer-text">&copy; 2024 Emmanuil Bernadin. All rights reserved.</p>
+</footer>
+<script>
+    const translations = {
+        en: {
+            siteTitle: "My Portfolio and Resume",
+            navAbout: "About Me",
+            navPortfolio: "Portfolio",
+            navResume: "Resume",
+            navContact: "Contact",
+            aboutTitle: "About Me",
+            aboutContent: "Hello! I am Emmanuil Bernadin, a passionate web developer with experience in creating dynamic and responsive websites. I love coding and learning new technologies.",
+            portfolioTitle: "Portfolio",
+            portfolioContent: "Here are some of my recent projects (On the site you click any language, as you will see text describing projects):",
+            project1: "Project 1 - My personal folder.",
+            project2: "Project 2 - My folder with TP tasks",
+            project3: "Project 3 - My personal game.",
+            resumeTitle: "Resume",
+            resumeContent: 'You can download my resume <a class="no-decoration" href="Lebenslauf Emmanuil Bernadin2.pdf" target="_blank">here</a>.',
+            workExperienceTitle: "Work Experience",
+            workExperienceList: `
+                <li><strong>ESPAS</strong> - Training IT (12.08.<b><i>24</i></b> - <b><i>Present</i></b>)</li>
+                <li><strong>ESPAS</strong> - Examination student (29.04.<b><i>24</i></b> - 09.08.<b><i>24</i></b>)</li>
+                <li><strong>OIZ</strong> - intern (18.09.<b><i>23</i></b> - 25.04.<b><i>24</i></b>)</li>
+            `,
+            educationTitle: "Education",
+            educationList: `
+                <li><strong>BBW Winthertur</strong> - Training IT (19.08.<b><i>24</i></b> - <b><i>Present</i></b>)</li>
+                <li><strong>ESPAS</strong> - Examination IT (29.04.<b><i>24</i></b> - 09.08.<b><i>24</i></b>)</li>
+                <li><strong>OIZ</strong> - intern ICT-Fachman and informatics (18.09.<b><i>23</i></b> - 25.04.<b><i>24</i></b>)</li>
+                <li><strong>Fachschool "Viventa"</strong> - german school (22.08.<b><i>22</i></b> - 14.07.<b><i>23</i></b>)</li>
+                <li><strong>EB Zuerich</strong> - german school (18.04.<b><i>22</i></b> - 01.07.<b><i>22</i></b>)</li>
+                <li><strong>School of Extern</strong> - secondary school (01.09.<b><i>16</i></b> - 23.06.<b><i>23</i></b>)</li>
+                <li><strong>"Сузір'я"</strong> - primar school (01.09.<b><i>12</i></b> - 31.05.<b><i>16</i></b>)</li>     
+            `,
+                contactTitle: "Contact",
+                contactContent: "If you would like to get in touch, please email me at",
+            footerText: "&copy; 2024 Emmanuil Bernadin. All rights reserved."
+        },
+        de: {
+            siteTitle: "Meine Portfolio und Lebenslauf",
+            navAbout: "Über mich",
+            navPortfolio: "Portfolio",
+            navResume: "Lebenslauf",
+            navContact: "Kontakt",
+            aboutTitle: "Über mich",
+            aboutContent: "Hallo! Ich bin Emmanuil Bernadin, ein leidenschaftlicher Webentwickler mit Erfahrung in der Erstellung dynamischer und responsiver Websites. Ich liebe das Programmieren und das Erlernen neuer Technologien.",
+            portfolioTitle: "Portfolio",
+            portfolioContent: "Hier sind einige meiner neuesten Projekte (Auf der Seite klicken Sie auf eine beliebige Sprache, da Sie Text sehen werden, der Projekte beschreibt):",
+            project1: "Projekt 1 - Mein personlicher Ordner.",
+            project2: "Projekt 2 - Mein Ordner mit GV Aufgaben.",
+            project3: "Projekt 3 - Mein personliches Spiel.",
+            resumeTitle: "Lebenslauf",
+            resumeContent: 'Sie können meinen Lebenslauf <a class="no-decoration" href="Lebenslauf Emmanuil Bernadin2.pdf" target="_blank">hier</a> herunterladen.',
+            workExperienceTitle: "Berufserfahrung",
+            workExperienceList: `
+                <li><strong>ESPAS</strong> - Lehre IT (12.08.<b><i>24</i></b> - <b><i>Present</i></b>)</li>
+                <li><strong>ESPAS</strong> - Abklärungsperson (29.04.<b><i>24</i></b> - 09.08.<b><i>24</i></b>)</li>
+                <li><strong>OIZ</strong> - Praktikant (18.09.<b><i>23</i></b> - 25.04.<b><i>24</i></b>)</li>
+            `,
+            educationTitle: "Bildung",
+            educationList: `
+                <li><strong>BBW Winthertur</strong> - Lehre IT (19.08.<b><i>24</i></b> - <b><i>Present</i></b>)</li>
+                <li><strong>ESPAS</strong> - Abklärung IT (29.04.<b><i>24</i></b> - 09.08.<b><i>24</i></b>)</li>
+                <li><strong>OIZ</strong> - Praktikum ICT-Fachman and informatics (18.09.<b><i>23</i></b> - 25.04.<b><i>24</i></b>)</li>
+                <li><strong>Fachschule "Viventa"</strong> - Deutschschule (22.08.<b><i>22</i></b> - 14.07.<b><i>23</i></b>)</li>
+                <li><strong>EB Zuerich</strong> - Deutschschule (18.04.<b><i>22</i></b> - 01.07.<b><i>22</i></b>)</li>
+                <li><strong>Schule der Extrovertierten</strong> - Secundarschule (01.09.<b><i>16</i></b> - 23.06.<b><i>23</i></b>)</li>
+                <li><strong>"Сузір'я"</strong> - Primarschule (01.09.<b><i>12</i></b> - 31.05.<b><i>16</i></b>)</li>  
+            `,
+            contactTitle: "Kontakt",
+            contactContent: "Wenn Sie Kontakt aufnehmen möchten, senden Sie bitte eine E-Mail an",
+            footerText: "&copy; 2024 Emmanuil Bernadin. Alle Rechte vorbehalten."
+        },
+        ru: {
+            siteTitle: "Мое Портфолио и Резюме",
+            navAbout: "Обо мне",
+            navPortfolio: "Портфолио",
+            navResume: "Резюме",
+            navContact: "Контакт",
+            aboutTitle: "Обо мне",
+            aboutContent: "Привет! Я Эммануил Бернадин, увлеченный веб-разработчик с опытом создания динамических и адаптивных веб-сайтов. Я люблю программирование и изучение новых технологий.",
+            portfolioTitle: "Портфолио",
+            portfolioContent: "Вот некоторые из моих последних проектов (Сперва на сайте вы нажмите на любой язык, так как вы увидите текст, описывающий проекты):",
+            project1: "Проект 1 - Моя личная папка",
+            project2: "Проект 2 - Моя папка с ЦП заданиями.",
+            project3: "Проект 3 - Моя созданная игра.",
+            resumeTitle: "Резюме",
+            resumeContent: 'Вы можете скачать мое резюме <a class="no-decoration" href="https://example.com/your-resume.pdf" target="_blank">здесь</a>.',
+            workExperienceTitle: "Опыт работы",
+            workExperienceList: `
+                <li><strong>ESPAS</strong> - ученик IT (19.08.<b><i>24</i></b> - <b><i>Present</i></b>)</li>
+                <li><strong>ESPAS</strong> - сдающий тест на годность фирме (разъяснительная) (29.04.<b><i>24</i></b> - 09.08.<b><i>24</i></b>)</li>
+                <li><strong>OIZ</strong> - стажер (18.09.<b><i>23</i></b> - 25.04.<b><i>24</i></b>)</li>
+            `,
+            educationTitle: "Образование",
+            educationList: `
+                <li><strong>BBW Winthertur</strong> - обучение IT (19.08.<b><i>24</i></b> - <b><i>Present</i></b>)</li>
+                <li><strong>ESPAS</strong> - разъяснительная IT (29.04.<b><i>24</i></b> - 09.08.<b><i>24</i></b>)</li>
+                <li><strong>OIZ</strong> - стажировка ICT-Эксперт и информационные технологии (18.09.<b><i>23</i></b> - 25.04.<b><i>24</i></b>)</li>
+                <li><strong>Фахшкола "Viventa"</strong> - немецкая школа (22.08.<b><i>22</i></b> - 14.07.<b><i>23</i></b>)</li>
+                <li><strong>EB Zuerich</strong> - немецкая школа (18.04.<b><i>22</i></b> - 01.07.<b><i>22</i></b>)</li>
+                <li><strong>Школа Экстернов</strong> - средняя и старшая школа (01.09.<b><i>16</i></b> - 23.06.<b><i>23</i></b>)</li>
+                <li><strong>"Сузір'я"</strong> - младшая школа (01.09.<b><i>12</i></b> - 31.05.<b><i>16</i></b>)</li>  
+            `,
+            contactTitle: "Контакт",
+            contactContent: "Если вы хотите связаться со мной, пожалуйста, напишите мне на",
+            footerText: "&copy; 2024 Эммануил Бернадин. Все права защищены."
+        }
+    };
+
+    function setLanguage(lang) {
+        const textElements = {
+            siteTitle: document.getElementById("site-title"),
+            navAbout: document.getElementById("nav-about"),
+            navPortfolio: document.getElementById("nav-portfolio"),
+            navResume: document.getElementById("nav-resume"),
+            navContact: document.getElementById("nav-contact"),
+            aboutTitle: document.getElementById("about-title"),
+            aboutContent: document.getElementById("about-content"),
+            portfolioTitle: document.getElementById("portfolio-title"),
+            portfolioContent: document.getElementById("portfolio-content"),
+            project1: document.getElementById("project1"),
+            project2: document.getElementById("project2"),
+            project3: document.getElementById("project3"),
+            resumeTitle: document.getElementById("resume-title"),
+            resumeContent: document.getElementById("resume-content"),
+            workExperienceTitle: document.getElementById("work-experience-title"),
+            workExperienceList: document.getElementById("work-experience-list"),
+            educationTitle: document.getElementById("education-title"),
+            educationList: document.getElementById("education-list"),
+            contactTitle: document.getElementById("contact-title"),
+            contactContent: document.getElementById("contact-content"),
+            contactEmail: document.getElementById("contact-email"),
+            phoneContact: document.getElementById("phone-contact"),
+            footerText: document.getElementById("footer-text")
+        };
+
+        const langContent = translations[lang];
+
+        textElements.siteTitle.textContent = langContent.siteTitle;
+        textElements.navAbout.textContent = langContent.navAbout;
+        textElements.navPortfolio.textContent = langContent.navPortfolio;
+        textElements.navResume.textContent = langContent.navResume;
+        textElements.navContact.textContent = langContent.navContact;
+        textElements.aboutTitle.textContent = langContent.aboutTitle;
+        textElements.aboutContent.textContent = langContent.aboutContent;
+        textElements.portfolioTitle.textContent = langContent.portfolioTitle;
+        textElements.portfolioContent.textContent = langContent.portfolioContent;
+        textElements.project1.textContent = langContent.project1;
+        textElements.project2.textContent = langContent.project2;
+        textElements.project3.textContent = langContent.project3;
+        textElements.resumeTitle.textContent = langContent.resumeTitle;
+        textElements.resumeContent.innerHTML = langContent.resumeContent;
+        textElements.workExperienceTitle.textContent = langContent.workExperienceTitle;
+        textElements.workExperienceList.innerHTML = langContent.workExperienceList;
+        textElements.educationTitle.textContent = langContent.educationTitle;
+        textElements.educationList.innerHTML = langContent.educationList;
+        textElements.contactTitle.textContent = langContent.contactTitle;
+        textElements.contactContent.innerHTML = `${langContent.contactContent} <a class="no-decoration" href="mailto:emmanuilka.media@gmail.com" id="contact-email">emmanuilka.media@gmail.com</a>.`;
+        textElements.phoneContact.textContent = "Phone: +1-234-567-890";
+        textElements.footerText.innerHTML = langContent.footerText;
+    }
+</script>
+
+</body>
+</html>
